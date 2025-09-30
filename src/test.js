@@ -1,21 +1,21 @@
-if (b == 0) { // Noncompliant
-  doOneMoreThing();
-} else {
-  doOneMoreThing();
+
+function CWE_398() { // IDENTICAL_BRANCHES
+  if (x >= 0) {
+    y = x;
+  } else {
+    y = x;
+  }
 }
 
-let a = b === 0 ? getValue() : getValue(); // Noncompliant
+function CWE_476() { // NULL_POINTER
+  let obj;
+  let y = obj.x;
+  console.log(y);
+}
 
-switch (i) { // Noncompliant
-  case 1:
-    doSomething();
-    break;
-  case 2:
-    doSomething();
-    break;
-  case 3:
-    doSomething();
-    break;
-  default:
-    doSomething();
+function CWE_480() { // BAD_BITWISE_OPERATOR
+  let obj = null;
+  if (obj & obj.prop) {
+    console.log(obj.prop);
+  }
 }
