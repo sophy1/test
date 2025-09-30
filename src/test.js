@@ -19,3 +19,6 @@ switch (i) { // Noncompliant
   default:
     doSomething();
 }
+
+const a = 3;
+a = 10;
