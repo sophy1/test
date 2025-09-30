@@ -1,28 +1,18 @@
-if (b == 0) { // Noncompliant
-  doOneMoreThing();
-} else {
-  doOneMoreThing();
-}
 
 let a = b === 0 ? getValue() : getValue(); // Noncompliant
 
-switch (i) { // Noncompliant
-  case 1:
-    doSomething();
-    break;
-  case 2:
-    doSomething();
-    break;
-  case 3:
-    doSomething();
-    break;
-  default:
-    doSomething();
-}
 
 function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
   const arr = [1, 2, 3];
   if (x < 0) {
     arr[x] = 3;
   }
+}
+
+function CWE_628() { // TOO_MANY_ARGS
+  function add(x, y) {
+    return x + y;
+  }
+  const sum = add(1, 2, 3);
+  console.log(sum);
 }
