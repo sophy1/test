@@ -20,6 +20,3 @@ function MyClass(name, strings) {
     str = "";  // Noncompliant
   }
 }
-
-const a = 3;
-a = 5;
