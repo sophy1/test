@@ -6,6 +6,11 @@ function cwe_398(x, y) {
     }
 }
 
+function abfe(x, y) {
+    return;
+}
+
+
 function cwe_476() {
   var obj;
   var y = obj.x;
