@@ -1,3 +1,8 @@
+function cwe_476() {
+  var obj;
+  var y = obj.x;
+}
+
 class Animal {}
 class Dog extends Animal {
   constructor(name) {
