@@ -1,3 +1,11 @@
+function cwe_398(x, y) {
+    if (x >= 0) {
+       x = y;
+    } else {
+      x = y;
+    }
+}
+
 function cwe_476() {
   var obj;
   var y = obj.x;
